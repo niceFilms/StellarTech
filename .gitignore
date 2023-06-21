@@ -18,6 +18,8 @@
 **/build/
 **/JARS/
 /JARS/
+**/run/
+/run/
 
 #FILES FOR MCREATOR DEV WORKSPACE
 #===============================
