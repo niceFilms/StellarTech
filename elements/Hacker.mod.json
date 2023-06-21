@@ -1,0 +1,16 @@
+{
+  "_fv": 43,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Hacker",
+    "pointOfInterest": {
+      "value": "Blocks.EMERALD_BLOCK"
+    },
+    "actionSound": {
+      "value": "CUSTOM:typer_short"
+    },
+    "hat": "Full",
+    "professionTextureFile": "hacker.png",
+    "zombifiedProfessionTextureFile": "zombie_hacker.png"
+  }
+}
