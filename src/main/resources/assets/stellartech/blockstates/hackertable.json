@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "stellartech:block/hackertable"
+    },
+    "facing=east": {
+      "model": "stellartech:block/hackertable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "stellartech:block/hackertable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stellartech:block/hackertable",
+      "y": 270
+    }
+  }
+}

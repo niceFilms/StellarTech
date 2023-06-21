@@ -4,7 +4,7 @@
   "definition": {
     "displayName": "Hacker",
     "pointOfInterest": {
-      "value": "Blocks.EMERALD_BLOCK"
+      "value": "CUSTOM:Hackertable"
     },
     "actionSound": {
       "value": "CUSTOM:typer_short"

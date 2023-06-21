@@ -20,6 +20,7 @@ import nicefilms.stellartech.init.StellartechModVillagerProfessions;
 import nicefilms.stellartech.init.StellartechModSounds;
 import nicefilms.stellartech.init.StellartechModMobEffects;
 import nicefilms.stellartech.init.StellartechModItems;
+import nicefilms.stellartech.init.StellartechModBlocks;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -52,7 +53,7 @@ public class StellartechMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		StellartechModSounds.REGISTRY.register(bus);
-
+		StellartechModBlocks.REGISTRY.register(bus);
 		StellartechModItems.REGISTRY.register(bus);
 
 		StellartechModMobEffects.REGISTRY.register(bus);

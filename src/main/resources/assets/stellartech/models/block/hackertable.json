@@ -1,0 +1,9 @@
+{
+  "parent": "stellartech:custom/hacker_table",
+  "textures": {
+    "all": "stellartech:block/texture_0.5",
+    "particle": "stellartech:block/texture_0.5",
+    "0": "stellartech:block/texture_0.5"
+  },
+  "render_type": "solid"
+}
