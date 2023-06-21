@@ -15,6 +15,7 @@ public class GlithcedingotItemInInventoryTickProcedure {
 		if (entity == null)
 			return;
 		StellartechMod.queueServerWork(Mth.nextInt(RandomSource.create(), 1200, 2400), () -> {
+			StellartechMod.LOGGER.info("working");
 		});
 		if (Mth.nextInt(RandomSource.create(), 1, 100) <= 5) {
 			if (entity instanceof Player _player) {

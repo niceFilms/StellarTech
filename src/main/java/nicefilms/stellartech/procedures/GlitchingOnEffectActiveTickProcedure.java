@@ -17,6 +17,7 @@ public class GlitchingOnEffectActiveTickProcedure {
 			return;
 		double random = 0;
 		StellartechMod.queueServerWork(20, () -> {
+			StellartechMod.LOGGER.info("working");
 		});
 		random = Mth.nextInt(RandomSource.create(), 1, 10);
 		if (random == 1) {
