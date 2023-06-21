@@ -1,0 +1,43 @@
+{
+  "biome_music": {
+    "subtitle": "subtitles.biome_music",
+    "sounds": [
+      {
+        "name": "stellartech:epic_sci-fi_music_aphelion_alibi_music_tuberipper.cc",
+        "stream": true
+      }
+    ]
+  },
+  "background_music_biome": {
+    "sounds": [
+      {
+        "name": "stellartech:the_world_in_2050_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "typing": {
+    "sounds": [
+      {
+        "name": "stellartech:writing_on_keyboard_sound_effect_typing_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "typer_short": {
+    "sounds": [
+      {
+        "name": "stellartech:writing_on_keyboard_sound_effect_typing_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "error": {
+    "sounds": [
+      {
+        "name": "stellartech:error_sound_effects_no_copyright_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  }
+}

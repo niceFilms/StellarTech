@@ -1,8 +1,0 @@
-{
-  "parent": "test:custom/corn",
-  "textures": {
-    "1": "test:block/texture_0",
-    "missing": "test:block/",
-    "particle": "test:item/texture_0"
-  }
-}

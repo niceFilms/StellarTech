@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[45,)"
-license="Academic Free License v3.0"
+license="MIT License"
 
 [[mods]]
-modId="test"
+modId="stellartech"
 version="1.0.0"
-displayName="test"
+displayName="StellarTech"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="epica, MCreator"
+displayURL="https://github.com/niceFilms/StellarTech"
+authors="niceFilms"
 
-[[dependencies.test]]
+[[dependencies.stellartech]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.4]"
