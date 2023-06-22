@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "stellartech:item/usb_texture"
-  }
-}

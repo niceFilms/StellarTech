@@ -39,29 +39,5 @@
         "stream": false
       }
     ]
-  },
-  "breaking_laptop": {
-    "sounds": [
-      {
-        "name": "stellartech:ultimate_glass_sfx_library_computer_smashing_tuberipper.cc",
-        "stream": false
-      }
-    ]
-  },
-  "falling_laptop": {
-    "sounds": [
-      {
-        "name": "stellartech:falling_sound_effect_tuberipper.cc",
-        "stream": false
-      }
-    ]
-  },
-  "starup_laptop": {
-    "sounds": [
-      {
-        "name": "stellartech:windows_startup_meme_sound_effect_tuberipper.cc",
-        "stream": false
-      }
-    ]
   }
 }

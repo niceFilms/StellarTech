@@ -20,7 +20,4 @@ public class StellartechModSounds {
 	public static final RegistryObject<SoundEvent> TYPING = REGISTRY.register("typing", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "typing")));
 	public static final RegistryObject<SoundEvent> TYPER_SHORT = REGISTRY.register("typer_short", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "typer_short")));
 	public static final RegistryObject<SoundEvent> ERROR = REGISTRY.register("error", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "error")));
-	public static final RegistryObject<SoundEvent> BREAKING_LAPTOP = REGISTRY.register("breaking_laptop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "breaking_laptop")));
-	public static final RegistryObject<SoundEvent> FALLING_LAPTOP = REGISTRY.register("falling_laptop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "falling_laptop")));
-	public static final RegistryObject<SoundEvent> STARUP_LAPTOP = REGISTRY.register("starup_laptop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "starup_laptop")));
 }
