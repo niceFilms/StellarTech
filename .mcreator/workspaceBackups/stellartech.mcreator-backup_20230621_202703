@@ -20,8 +20,8 @@
       "registry_name": "creativeblackhole",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/item/creativeblackhole.json",
-          "src/main/java/net/mcreator/test/item/CreativeblackholeItem.java"
+          "src/main/java/nicefilms/stellartech/item/CreativeblackholeItem.java",
+          "src/main/resources/assets/stellartech/models/item/creativeblackhole.json"
         ]
       }
     },
@@ -34,7 +34,7 @@
       "registry_name": "city_of_the_future",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/worldgen/biome/city_of_the_future.json"
+          "src/main/resources/data/stellartech/worldgen/biome/city_of_the_future.json"
         ]
       }
     },
@@ -47,7 +47,7 @@
       "registry_name": "cannedcorn_player_finishes_using_item",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/test/procedures/CannedcornPlayerFinishesUsingItemProcedure.java"
+          "src/main/java/nicefilms/stellartech/procedures/CannedcornPlayerFinishesUsingItemProcedure.java"
         ],
         "dependencies": [
           {
@@ -66,8 +66,8 @@
       "registry_name": "cannedcorn",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/test/item/CannedcornItem.java",
-          "src/main/resources/assets/test/models/item/cannedcorn.json"
+          "src/main/resources/assets/stellartech/models/item/cannedcorn.json",
+          "src/main/java/nicefilms/stellartech/item/CannedcornItem.java"
         ]
       }
     },
@@ -80,7 +80,7 @@
       "registry_name": "glithcedingot_item_in_inventory_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/test/procedures/GlithcedingotItemInInventoryTickProcedure.java"
+          "src/main/java/nicefilms/stellartech/procedures/GlithcedingotItemInInventoryTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -103,8 +103,73 @@
       "registry_name": "glithcedingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/item/glithcedingot.json",
-          "src/main/java/net/mcreator/test/item/GlithcedingotItem.java"
+          "src/main/resources/assets/stellartech/models/item/glithcedingot.json",
+          "src/main/java/nicefilms/stellartech/item/GlithcedingotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GlitchingOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitching_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlitchingOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glitching",
+      "type": "potioneffect",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitching",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/potion/GlitchingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Hacker",
+      "type": "villagerprofession",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/textures/entity/villager/profession/hacker.png.mcmeta"
+        ]
+      }
+    },
+    {
+      "name": "Hackertable",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hackertable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/hackertable.json",
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
+          "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
         ]
       }
     }
@@ -155,14 +220,24 @@
   "language_map": {
     "en_us": {
       "biome.test.city_of_the_future": "City Of The Future",
-      "item.test.creativeblackhole": "Creativeblackhole",
+      "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
-      "item.test.glithcedingot": "Glitched Ingot",
       "subtitles.background_music_biome": "",
       "subtitles.typer_short": "",
+      "item_group.stellartech.stellar_tech": "Stellar Tech",
       "subtitles.typing": "",
-      "subtitles.error": "",
       "subtitles.biome_music": "scifi",
+      "effect.stellartech.glitching": "98@...19475-102",
+      "item.test.creativeblackhole": "Creativeblackhole",
+      "block.stellartech.hackertable": "Hackertable",
+      "item.test.glithcedingot": "Glitched Ingot",
+      "effect.test.glitching": "98@...19475-102",
+      "biome.stellartech.city_of_the_future": "City Of The Future",
+      "subtitles.error": "",
+      "entity.minecraft.villager.test.hacker": "Hacker",
+      "item.stellartech.glithcedingot": "Glitched Ingot",
+      "item.stellartech.cannedcorn": "Canned Corn",
       "item.test.cannedcorn": "Canned Corn"
     }
   },
@@ -171,12 +246,12 @@
     "children": []
   },
   "workspaceSettings": {
-    "modid": "test",
-    "modName": "test",
+    "modid": "stellartech",
+    "modName": "StellarTech",
     "version": "1.0.0",
-    "author": "epica, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "author": "niceFilms",
+    "websiteURL": "https://github.com/niceFilms/StellarTech",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -184,7 +259,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.4",
-    "modElementsPackage": "net.mcreator.test",
+    "modElementsPackage": "nicefilms.stellartech",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202300224119
