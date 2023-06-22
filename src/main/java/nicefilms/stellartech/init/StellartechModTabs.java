@@ -20,7 +20,6 @@ public class StellartechModTabs {
 				builder -> builder.title(Component.translatable("item_group.stellartech.stellar_tech")).icon(() -> new ItemStack(StellartechModItems.CREATIVEBLACKHOLE.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(StellartechModItems.CANNEDCORN.get());
 					tabData.accept(StellartechModItems.GLITHCEDINGOT.get());
-					tabData.accept(StellartechModBlocks.HACKERTABLE.get().asItem());
 					tabData.accept(StellartechModItems.US_BSTICK.get());
 					tabData.accept(StellartechModBlocks.LAPTOP.get().asItem());
 					tabData.accept(StellartechModItems.GLITHCED_USB.get());

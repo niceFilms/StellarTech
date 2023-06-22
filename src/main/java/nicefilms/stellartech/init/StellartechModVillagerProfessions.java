@@ -33,7 +33,7 @@ import com.google.common.collect.ImmutableSet;
 public class StellartechModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, StellartechMod.MODID);
-	public static final RegistryObject<VillagerProfession> HACKER = registerProfession("hacker", () -> StellartechModBlocks.HACKERTABLE.get(), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:typer_short")));
+	public static final RegistryObject<VillagerProfession> HACKER = registerProfession("hacker", () -> StellartechModItems.HACKERTABLE.get(), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:typer_short")));
 
 	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));

@@ -24,7 +24,6 @@ public class StellartechModItems {
 	public static final RegistryObject<Item> CANNEDCORN = REGISTRY.register("cannedcorn", () -> new CannedcornItem());
 	public static final RegistryObject<Item> CREATIVEBLACKHOLE = REGISTRY.register("creativeblackhole", () -> new CreativeblackholeItem());
 	public static final RegistryObject<Item> GLITHCEDINGOT = REGISTRY.register("glithcedingot", () -> new GlithcedingotItem());
-	public static final RegistryObject<Item> HACKERTABLE = block(StellartechModBlocks.HACKERTABLE);
 	public static final RegistryObject<Item> US_BSTICK = REGISTRY.register("us_bstick", () -> new USBstickItem());
 	public static final RegistryObject<Item> LAPTOPOFF = block(StellartechModBlocks.LAPTOPOFF);
 	public static final RegistryObject<Item> LAPTOP = block(StellartechModBlocks.LAPTOP);
