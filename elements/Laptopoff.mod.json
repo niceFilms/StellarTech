@@ -109,7 +109,7 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "hasEnergyStorage": true,
     "energyInitial": 0,
     "energyCapacity": 100,
     "energyMaxReceive": 100,

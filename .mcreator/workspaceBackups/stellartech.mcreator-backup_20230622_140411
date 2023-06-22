@@ -248,6 +248,85 @@
           }
         ]
       }
+    },
+    {
+      "name": "LaptopoffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopoffOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Laptopoff",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LaptopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptop_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -323,12 +402,22 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "laptop_startup",
+      "files": [
+        "microsoft_windows_xp_startup_sound_tuberipper.cc",
+        "windows_shut-down_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "biome.test.city_of_the_future": "City Of The Future",
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "subtitles.laptop_startup": "",
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
@@ -340,7 +429,7 @@
       "subtitles.biome_music": "scifi",
       "item.stellartech.us_bstick": "USB Stick",
       "block.stellartech.hackertable": "Hackertable",
-      "block.stellartech.laptopoff": "Laptop(On)",
+      "block.stellartech.laptopoff": "Laptop Off",
       "item.stellartech.glitched_usb": "Glitched USB",
       "entity.minecraft.villager.test.hacker": "Hacker",
       "item.stellartech.glithced_usb": "Glitched USB",
