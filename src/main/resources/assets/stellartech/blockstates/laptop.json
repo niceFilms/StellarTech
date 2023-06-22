@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "stellartech:block/laptop"
+    },
+    "facing=east": {
+      "model": "stellartech:block/laptop",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "stellartech:block/laptop",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stellartech:block/laptop",
+      "y": 270
     }
   }
 }

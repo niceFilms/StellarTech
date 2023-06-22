@@ -14,13 +14,19 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -36,12 +42,15 @@ import java.util.List;
 import java.util.Collections;
 
 public class LaptopBlock extends Block implements EntityBlock {
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+
 	public LaptopBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:breaking_laptop")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:breaking_laptop")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:falling_laptop"))))
 				.strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -61,7 +70,30 @@ public class LaptopBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(1, 0, 4, 15, 1, 15), box(1, 1, 14, 15, 9, 15));
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(1, 0, 1, 15, 1, 12), box(1, 1, 1, 15, 9, 2));
+			case NORTH -> Shapes.or(box(1, 0, 4, 15, 1, 15), box(1, 1, 14, 15, 9, 15));
+			case EAST -> Shapes.or(box(1, 0, 1, 12, 1, 15), box(1, 1, 1, 2, 9, 15));
+			case WEST -> Shapes.or(box(4, 0, 1, 15, 1, 15), box(14, 1, 1, 15, 9, 15));
+		};
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override

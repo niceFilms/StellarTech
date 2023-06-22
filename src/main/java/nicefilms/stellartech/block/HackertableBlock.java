@@ -50,10 +50,14 @@ public class HackertableBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 23, 16);
-			case NORTH -> box(0, 0, 0, 16, 23, 16);
-			case EAST -> box(0, 0, 0, 16, 23, 16);
-			case WEST -> box(0, 0, 0, 16, 23, 16);
+			default -> Shapes.or(box(14, 0, 15, 16, 12, 16), box(0, 0, 15, 2, 12, 16), box(0, 0, 14, 1, 12, 15), box(0, 0, 1, 1, 12, 2), box(15, 0, 14, 16, 12, 15), box(15, 0, 1, 16, 12, 2), box(14, 0, 0, 16, 12, 1), box(0, 0, 0, 2, 12, 1),
+					box(0, 12, 0, 16, 14, 16), box(1, 14, 1, 15, 15, 12), box(1, 15, 1, 15, 23, 2), box(13, 14, 13, 15, 15, 16));
+			case NORTH -> Shapes.or(box(0, 0, 0, 2, 12, 1), box(14, 0, 0, 16, 12, 1), box(15, 0, 1, 16, 12, 2), box(15, 0, 14, 16, 12, 15), box(0, 0, 1, 1, 12, 2), box(0, 0, 14, 1, 12, 15), box(0, 0, 15, 2, 12, 16), box(14, 0, 15, 16, 12, 16),
+					box(0, 12, 0, 16, 14, 16), box(1, 14, 4, 15, 15, 15), box(1, 15, 14, 15, 23, 15), box(1, 14, 0, 3, 15, 3));
+			case EAST -> Shapes.or(box(15, 0, 0, 16, 12, 2), box(15, 0, 14, 16, 12, 16), box(14, 0, 15, 15, 12, 16), box(1, 0, 15, 2, 12, 16), box(14, 0, 0, 15, 12, 1), box(1, 0, 0, 2, 12, 1), box(0, 0, 0, 1, 12, 2), box(0, 0, 14, 1, 12, 16),
+					box(0, 12, 0, 16, 14, 16), box(1, 14, 1, 12, 15, 15), box(1, 15, 1, 2, 23, 15), box(13, 14, 1, 16, 15, 3));
+			case WEST -> Shapes.or(box(0, 0, 14, 1, 12, 16), box(0, 0, 0, 1, 12, 2), box(1, 0, 0, 2, 12, 1), box(14, 0, 0, 15, 12, 1), box(1, 0, 15, 2, 12, 16), box(14, 0, 15, 15, 12, 16), box(15, 0, 14, 16, 12, 16), box(15, 0, 0, 16, 12, 2),
+					box(0, 12, 0, 16, 14, 16), box(4, 14, 1, 15, 15, 15), box(14, 15, 1, 15, 23, 15), box(0, 14, 13, 3, 15, 15));
 		};
 	}
 
