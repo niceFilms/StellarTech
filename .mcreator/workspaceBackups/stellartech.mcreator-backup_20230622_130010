@@ -174,29 +174,91 @@
       }
     },
     {
-      "name": "USBstick",
+      "name": "USB",
       "type": "item",
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "us_bstick",
+      "registry_name": "usb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stellartech/models/item/us_bstick.json",
-          "src/main/java/nicefilms/stellartech/item/USBstickItem.java"
+          "src/main/java/nicefilms/stellartech/item/USBItem.java",
+          "src/main/resources/assets/stellartech/models/item/usb.json"
         ]
       }
     },
     {
-      "name": "LaptopRedstoneOn",
-      "type": "procedure",
+      "name": "GlitchedUSB",
+      "type": "item",
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "laptop_redstone_on",
+      "registry_name": "glitched_usb",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopRedstoneOnProcedure.java"
+          "src/main/resources/assets/stellartech/models/item/glitched_usb.json",
+          "src/main/java/nicefilms/stellartech/item/GlitchedUSBItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Laptop",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/laptop.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/item/laptop.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
+          "src/main/resources/assets/stellartech/models/block/laptop.json"
+        ]
+      }
+    },
+    {
+      "name": "LaptopoffRedstoneOn",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopoffRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaptopoffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopoffOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -221,7 +283,7 @@
     {
       "name": "Laptopoff",
       "type": "block",
-      "sortid": 14,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laptopoff",
@@ -238,7 +300,7 @@
     {
       "name": "LaptopOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laptop_on_block_right_clicked",
@@ -264,48 +326,6 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "Laptop",
-      "type": "block",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
-          "src/main/resources/assets/stellartech/models/item/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
-          "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "GlithcedUSB",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glithced_usb",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/item/GlithcedUSBItem.java",
-          "src/main/resources/assets/stellartech/models/item/glithced_usb.json"
-        ]
-      }
-    },
-    {
-      "name": "HackerTrades",
-      "type": "villagertrade",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hacker_trades",
-      "metadata": {
-        "files": []
       }
     }
   ],
@@ -374,12 +394,30 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "shut_down_computer",
+      "files": [
+        "windows_shut-down_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "laptop_startup",
+      "files": [
+        "microsoft_windows_xp_startup_sound_tuberipper.cc",
+        "windows_shut-down_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "biome.test.city_of_the_future": "City Of The Future",
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "subtitles.laptop_startup": "",
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
@@ -391,10 +429,13 @@
       "subtitles.biome_music": "scifi",
       "item.stellartech.us_bstick": "USB Stick",
       "block.stellartech.hackertable": "Hackertable",
-      "block.stellartech.laptopoff": "Laptop(On)",
+      "block.stellartech.laptopoff": "Laptop Off",
+      "item.stellartech.glitched_usb": "Glitched USB",
       "entity.minecraft.villager.test.hacker": "Hacker",
       "item.stellartech.glithced_usb": "Glitched USB",
+      "item.stellartech.usb": "USB ",
       "block.stellartech.laptop": "Laptop",
+      "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",
       "item.test.glithcedingot": "Glitched Ingot",

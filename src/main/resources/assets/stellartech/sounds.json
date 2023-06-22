@@ -39,5 +39,49 @@
         "stream": false
       }
     ]
+  },
+  "breaking_laptop": {
+    "sounds": [
+      {
+        "name": "stellartech:ultimate_glass_sfx_library_computer_smashing_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "falling_laptop": {
+    "sounds": [
+      {
+        "name": "stellartech:falling_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "starup_laptop": {
+    "sounds": [
+      {
+        "name": "stellartech:windows_startup_meme_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "shut_down_computer": {
+    "sounds": [
+      {
+        "name": "stellartech:windows_shut-down_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
+  },
+  "laptop_startup": {
+    "sounds": [
+      {
+        "name": "stellartech:microsoft_windows_xp_startup_sound_tuberipper.cc",
+        "stream": false
+      },
+      {
+        "name": "stellartech:windows_shut-down_sound_effect_tuberipper.cc",
+        "stream": false
+      }
+    ]
   }
 }

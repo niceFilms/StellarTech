@@ -402,22 +402,12 @@
       ],
       "category": "neutral",
       "subtitle": ""
-    },
-    {
-      "name": "laptop_startup",
-      "files": [
-        "microsoft_windows_xp_startup_sound_tuberipper.cc",
-        "windows_shut-down_sound_effect_tuberipper.cc"
-      ],
-      "category": "neutral",
-      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "biome.test.city_of_the_future": "City Of The Future",
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
-      "subtitles.laptop_startup": "",
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",

@@ -4,9 +4,9 @@
  */
 package nicefilms.stellartech.init;
 
-import nicefilms.stellartech.item.USBstickItem;
+import nicefilms.stellartech.item.USBItem;
 import nicefilms.stellartech.item.GlithcedingotItem;
-import nicefilms.stellartech.item.GlithcedUSBItem;
+import nicefilms.stellartech.item.GlitchedUSBItem;
 import nicefilms.stellartech.item.CreativeblackholeItem;
 import nicefilms.stellartech.item.CannedcornItem;
 import nicefilms.stellartech.StellartechMod;
@@ -24,10 +24,11 @@ public class StellartechModItems {
 	public static final RegistryObject<Item> CANNEDCORN = REGISTRY.register("cannedcorn", () -> new CannedcornItem());
 	public static final RegistryObject<Item> CREATIVEBLACKHOLE = REGISTRY.register("creativeblackhole", () -> new CreativeblackholeItem());
 	public static final RegistryObject<Item> GLITHCEDINGOT = REGISTRY.register("glithcedingot", () -> new GlithcedingotItem());
-	public static final RegistryObject<Item> US_BSTICK = REGISTRY.register("us_bstick", () -> new USBstickItem());
-	public static final RegistryObject<Item> LAPTOPOFF = block(StellartechModBlocks.LAPTOPOFF);
+	public static final RegistryObject<Item> HACKERTABLE = block(StellartechModBlocks.HACKERTABLE);
+	public static final RegistryObject<Item> USB = REGISTRY.register("usb", () -> new USBItem());
+	public static final RegistryObject<Item> GLITCHED_USB = REGISTRY.register("glitched_usb", () -> new GlitchedUSBItem());
 	public static final RegistryObject<Item> LAPTOP = block(StellartechModBlocks.LAPTOP);
-	public static final RegistryObject<Item> GLITHCED_USB = REGISTRY.register("glithced_usb", () -> new GlithcedUSBItem());
+	public static final RegistryObject<Item> LAPTOPOFF = block(StellartechModBlocks.LAPTOPOFF);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
