@@ -48,6 +48,23 @@ public class HackertableBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+<<<<<<< HEAD
+			default -> box(-7, 0, 0, 16, 24, 16);
+			case NORTH -> box(0, 0, 0, 23, 24, 16);
+			case EAST -> box(0, 0, 0, 16, 24, 23);
+			case WEST -> box(0, 0, -7, 16, 24, 16);
+=======
+			default -> box(0, 0, 0, 16, 23, 16);
+			case NORTH -> box(0, 0, 0, 16, 23, 16);
+			case EAST -> box(0, 0, 0, 16, 23, 16);
+			case WEST -> box(0, 0, 0, 16, 23, 16);
+>>>>>>> af4c369801b529aabddae6c6b0544173e2e58e4e
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING);
 	}

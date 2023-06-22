@@ -166,10 +166,11 @@
       "registry_name": "hackertable",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
           "src/main/resources/assets/stellartech/models/item/hackertable.json",
-          "src/main/resources/assets/stellartech/models/block/hackertable.json",
-          "src/main/resources/assets/stellartech/blockstates/hackertable.json"
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
+          "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
+<<<<<<<< HEAD:.mcreator/workspaceBackups/stellartech.mcreator-backup_20230621_200009
         ]
       }
     },
@@ -184,128 +185,9 @@
         "files": [
           "src/main/resources/assets/stellartech/models/item/us_bstick.json",
           "src/main/java/nicefilms/stellartech/item/USBstickItem.java"
+========
+>>>>>>>> af4c369801b529aabddae6c6b0544173e2e58e4e:.mcreator/workspaceBackups/stellartech.mcreator-backup_20230621_200932
         ]
-      }
-    },
-    {
-      "name": "LaptopRedstoneOn",
-      "type": "procedure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Laptopoff",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "LaptopOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Laptop",
-      "type": "block",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
-          "src/main/resources/assets/stellartech/models/item/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
-          "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "GlithcedUSB",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glithced_usb",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/item/GlithcedUSBItem.java",
-          "src/main/resources/assets/stellartech/models/item/glithced_usb.json"
-        ]
-      }
-    },
-    {
-      "name": "HackerTrades",
-      "type": "villagertrade",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hacker_trades",
-      "metadata": {
-        "files": []
       }
     }
   ],
@@ -350,30 +232,6 @@
       ],
       "category": "neutral",
       "subtitle": ""
-    },
-    {
-      "name": "breaking_laptop",
-      "files": [
-        "ultimate_glass_sfx_library_computer_smashing_tuberipper.cc"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "falling_laptop",
-      "files": [
-        "falling_sound_effect_tuberipper.cc"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "starup_laptop",
-      "files": [
-        "windows_startup_meme_sound_effect_tuberipper.cc"
-      ],
-      "category": "neutral",
-      "subtitle": ""
     }
   ],
   "language_map": {
@@ -383,25 +241,22 @@
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
-      "subtitles.breaking_laptop": "",
       "subtitles.typer_short": "",
       "item_group.stellartech.stellar_tech": "Stellar Tech",
       "subtitles.typing": "",
-      "subtitles.falling_laptop": "",
       "subtitles.biome_music": "scifi",
-      "item.stellartech.us_bstick": "USB Stick",
-      "block.stellartech.hackertable": "Hackertable",
-      "block.stellartech.laptopoff": "Laptop(On)",
-      "entity.minecraft.villager.test.hacker": "Hacker",
-      "item.stellartech.glithced_usb": "Glitched USB",
-      "block.stellartech.laptop": "Laptop",
       "effect.stellartech.glitching": "98@...19475-102",
+<<<<<<<< HEAD:.mcreator/workspaceBackups/stellartech.mcreator-backup_20230621_200009
+      "item.stellartech.us_bstick": "USB Stick",
+========
+>>>>>>>> af4c369801b529aabddae6c6b0544173e2e58e4e:.mcreator/workspaceBackups/stellartech.mcreator-backup_20230621_200932
       "item.test.creativeblackhole": "Creativeblackhole",
+      "block.stellartech.hackertable": "Hackertable",
       "item.test.glithcedingot": "Glitched Ingot",
-      "subtitles.starup_laptop": "",
       "effect.test.glitching": "98@...19475-102",
       "biome.stellartech.city_of_the_future": "City Of The Future",
       "subtitles.error": "",
+      "entity.minecraft.villager.test.hacker": "Hacker",
       "item.stellartech.glithcedingot": "Glitched Ingot",
       "item.stellartech.cannedcorn": "Canned Corn",
       "item.test.cannedcorn": "Canned Corn"

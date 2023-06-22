@@ -282,31 +282,6 @@
           "src/main/resources/assets/stellartech/models/block/laptop.json"
         ]
       }
-    },
-    {
-      "name": "GlithcedUSB",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glithced_usb",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/item/GlithcedUSBItem.java",
-          "src/main/resources/assets/stellartech/models/item/glithced_usb.json"
-        ]
-      }
-    },
-    {
-      "name": "HackerTrades",
-      "type": "villagertrade",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hacker_trades",
-      "metadata": {
-        "files": []
-      }
     }
   ],
   "variable_elements": [],
@@ -393,7 +368,6 @@
       "block.stellartech.hackertable": "Hackertable",
       "block.stellartech.laptopoff": "Laptop(On)",
       "entity.minecraft.villager.test.hacker": "Hacker",
-      "item.stellartech.glithced_usb": "Glitched USB",
       "block.stellartech.laptop": "Laptop",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",

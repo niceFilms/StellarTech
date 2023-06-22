@@ -2,15 +2,15 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "texture_0.5",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "hacker_table:default",
-    "rotationMode": 1,
+    "texture": "laptop_test",
+    "textureTop": "laptop_test",
+    "textureLeft": "laptop_test",
+    "textureFront": "laptop_test",
+    "textureRight": "laptop_test",
+    "textureBack": "laptop_test",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -27,18 +27,13 @@
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
-<<<<<<< HEAD
-        "Mx": 23.0,
-        "My": 24.0,
-=======
         "Mx": 16.0,
-        "My": 23.0,
->>>>>>> af4c369801b529aabddae6c6b0544173e2e58e4e
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Hackertable",
+    "name": "Laptop",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -56,10 +51,10 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "canRedstoneConnect": true,
+    "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -82,30 +77,30 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GROUND"
     },
     "breakSound": {
-      "value": ""
+      "value": "CUSTOM:breaking_laptop"
     },
     "fallSound": {
-      "value": ""
+      "value": "CUSTOM:falling_laptop"
     },
     "hitSound": {
-      "value": ""
+      "value": "CUSTOM:breaking_laptop"
     },
     "placeSound": {
-      "value": ""
+      "value": "block.metal.place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.metal.step"
     },
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -114,14 +109,20 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
+    "energyCapacity": 100,
+    "energyMaxReceive": 1,
+    "energyMaxExtract": 1,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "LaptopOnBlockRightClicked"
+    },
+    "onRedstoneOn": {
+      "name": "LaptopRedstoneOn"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -1,0 +1,87 @@
+{
+  "_fv": 43,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:Hacker"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:Glithcedingot"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:Glithcedingot"
+            },
+            "countOffer": 2,
+            "level": 4,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.0
+          },
+          {
+            "price1": {
+              "value": "Items.NETHERITE_SCRAP"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 48,
+            "offer": {
+              "value": "Items.NETHERITE_SCRAP"
+            },
+            "countOffer": 2,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 0,
+            "priceMultiplier": 0.09999999999999999
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:USBstick"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:USBstick"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 64,
+            "offer": {
+              "value": "CUSTOM:GlithcedUSB"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

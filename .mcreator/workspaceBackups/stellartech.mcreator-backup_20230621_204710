@@ -217,96 +217,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Laptopoff",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "LaptopOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Laptop",
-      "type": "block",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptop",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
-          "src/main/resources/assets/stellartech/models/item/laptop.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
-          "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "GlithcedUSB",
-      "type": "item",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glithced_usb",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/item/GlithcedUSBItem.java",
-          "src/main/resources/assets/stellartech/models/item/glithced_usb.json"
-        ]
-      }
-    },
-    {
-      "name": "HackerTrades",
-      "type": "villagertrade",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hacker_trades",
-      "metadata": {
-        "files": []
-      }
     }
   ],
   "variable_elements": [],
@@ -391,10 +301,7 @@
       "subtitles.biome_music": "scifi",
       "item.stellartech.us_bstick": "USB Stick",
       "block.stellartech.hackertable": "Hackertable",
-      "block.stellartech.laptopoff": "Laptop(On)",
       "entity.minecraft.villager.test.hacker": "Hacker",
-      "item.stellartech.glithced_usb": "Glitched USB",
-      "block.stellartech.laptop": "Laptop",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",
       "item.test.glithcedingot": "Glitched Ingot",

@@ -21,6 +21,9 @@ public class StellartechModTabs {
 					tabData.accept(StellartechModItems.CANNEDCORN.get());
 					tabData.accept(StellartechModItems.GLITHCEDINGOT.get());
 					tabData.accept(StellartechModBlocks.HACKERTABLE.get().asItem());
+					tabData.accept(StellartechModItems.US_BSTICK.get());
+					tabData.accept(StellartechModBlocks.LAPTOP.get().asItem());
+					tabData.accept(StellartechModItems.GLITHCED_USB.get());
 				}).withSearchBar());
 	}
 }
