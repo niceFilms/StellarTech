@@ -67,12 +67,6 @@ public class LaptopOnBlockRightClickedProcedure {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:laptop_startup")), SoundSource.MASTER, 100, 1, false);
 			}
 		}
-		{
-			BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-			int _amount = (int) energy;
-			if (_ent != null)
-				_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
-		}
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + energy)), false);
 	}
