@@ -1,13 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "stellartech:custom/computer_off",
   "textures": {
-    "down": "stellartech:block/laptop_sides_test",
-    "up": "stellartech:block/laptop_sides_test",
-    "north": "stellartech:block/laptop_off_texture_front",
-    "east": "stellartech:block/laptop_sides_test",
-    "south": "stellartech:block/laptop_sides_test",
-    "west": "stellartech:block/laptop_sides_test",
-    "particle": "stellartech:block/laptop_sides_test"
+    "all": "stellartech:block/laptop_sides_test",
+    "particle": "stellartech:block/laptop_sides_test",
+    "2": "stellartech:block/texture_0.7",
+    "3": "stellartech:block/texture_0.7"
   },
   "render_type": "solid"
 }

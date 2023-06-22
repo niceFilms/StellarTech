@@ -8,6 +8,9 @@ import nicefilms.stellartech.block.entity.LaptopoffBlockEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.util.ForgeSoundType;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -38,12 +41,27 @@ public class LaptopoffBlock extends Block implements EntityBlock {
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:breaking_laptop")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:breaking_laptop")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("stellartech:falling_laptop"))))
-				.strength(1f, 10f));
+				.strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.or(box(1, 0, 4, 15, 1, 15), box(1, 1, 14, 15, 9, 15));
 	}
 
 	@Override

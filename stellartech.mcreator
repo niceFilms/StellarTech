@@ -210,11 +210,11 @@
       "registry_name": "laptop",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
-          "src/main/resources/assets/stellartech/models/item/laptop.json",
+          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
-          "src/main/resources/assets/stellartech/models/block/laptop.json"
+          "src/main/resources/assets/stellartech/models/block/laptop.json",
+          "src/main/resources/assets/stellartech/models/item/laptop.json"
         ]
       }
     },
@@ -289,10 +289,10 @@
       "registry_name": "laptopoff",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
           "src/main/resources/assets/stellartech/models/item/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
           "src/main/resources/assets/stellartech/models/block/laptopoff.json",
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
           "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
         ]
       }
@@ -415,9 +415,9 @@
   ],
   "language_map": {
     "en_us": {
-      "biome.test.city_of_the_future": "City Of The Future",
-      "entity.minecraft.villager.stellartech.hacker": "Hacker",
       "subtitles.laptop_startup": "",
+      "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "biome.test.city_of_the_future": "City Of The Future",
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
