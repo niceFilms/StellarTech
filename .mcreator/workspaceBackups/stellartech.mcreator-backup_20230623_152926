@@ -166,10 +166,10 @@
       "registry_name": "hackertable",
       "metadata": {
         "files": [
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
           "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
           "src/main/resources/assets/stellartech/models/item/hackertable.json",
-          "src/main/resources/assets/stellartech/models/block/hackertable.json",
-          "src/main/resources/assets/stellartech/blockstates/hackertable.json"
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
         ]
       }
     },
@@ -215,37 +215,6 @@
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "LaptopoffRedstoneOn",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopoffRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -309,6 +278,108 @@
           "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Outlet",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outlet",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json",
+          "src/main/resources/assets/stellartech/models/item/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
+          "src/main/resources/assets/stellartech/models/block/outlet.json"
+        ]
+      }
+    },
+    {
+      "name": "GlithcedblockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedblock_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlithcedblockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glithcedblock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/block/glithcedblock.json",
+          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json",
+          "src/main/resources/assets/stellartech/models/item/glithcedblock.json",
+          "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "GlitchedUniverse",
+      "type": "dimension",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_universe",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java",
+          "src/main/resources/data/stellartech/dimension_type/glitched_universe.json",
+          "src/main/resources/data/stellartech/dimension/glitched_universe.json"
+        ]
+      }
+    },
+    {
+      "name": "GlitchedUSBRightclicked",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_usb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlitchedUSBRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -411,6 +482,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "glitch_sound_effect",
+      "files": [
+        "glitch_sound_effects_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -428,13 +507,16 @@
       "subtitles.falling_laptop": "",
       "subtitles.biome_music": "scifi",
       "item.stellartech.us_bstick": "USB Stick",
+      "block.stellartech.glithcedblock": "Glithcedblock",
       "block.stellartech.hackertable": "Hackertable",
       "block.stellartech.laptopoff": "Laptop Off",
       "item.stellartech.glitched_usb": "Glitched USB",
       "entity.minecraft.villager.test.hacker": "Hacker",
       "item.stellartech.glithced_usb": "Glitched USB",
       "item.stellartech.usb": "USB ",
+      "subtitles.glitch_sound_effect": "",
       "block.stellartech.laptop": "Laptop",
+      "block.stellartech.outlet": "Creative Outlet",
       "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",

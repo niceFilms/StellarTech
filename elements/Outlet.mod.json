@@ -2,14 +2,14 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "laptop_sides_test",
-    "textureTop": "laptop_sides_test",
-    "textureLeft": "laptop_sides_test",
-    "textureFront": "laptop_test_front",
-    "textureRight": "laptop_sides_test",
-    "textureBack": "laptop_sides_test",
-    "renderType": 2,
-    "customModelName": "computer_on:default",
+    "texture": "outlet_block",
+    "textureTop": "outlet_block",
+    "textureLeft": "outlet_block",
+    "textureFront": "power_outlet_side",
+    "textureRight": "outlet_block",
+    "textureBack": "outlet_block",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -18,38 +18,29 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 1.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 4.0,
-        "Mx": 15.0,
-        "My": 1.0,
-        "Mz": 15.0,
-        "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 1.0,
-        "mz": 14.0,
-        "Mx": 15.0,
-        "My": 9.0,
-        "Mz": 15.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Laptop Off",
+    "name": "Creative Outlet",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:StellarTech"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -61,7 +52,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": true,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "IRON"
     },
@@ -74,7 +65,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:Laptop"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -86,24 +77,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": true,
+    "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
-      "value": "CUSTOM:breaking_laptop"
+      "value": ""
     },
     "fallSound": {
-      "value": "CUSTOM:falling_laptop"
+      "value": ""
     },
     "hitSound": {
-      "value": "CUSTOM:breaking_laptop"
+      "value": ""
     },
     "placeSound": {
-      "value": "block.metal.place"
+      "value": ""
     },
     "stepSound": {
-      "value": "block.metal.step"
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,
@@ -119,16 +110,13 @@
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
-    "energyInitial": 0,
-    "energyCapacity": 24000,
-    "energyMaxReceive": 24000,
-    "energyMaxExtract": 24000,
+    "energyInitial": 1000000000,
+    "energyCapacity": 1316134912,
+    "energyMaxReceive": 2147483647,
+    "energyMaxExtract": 2147483647,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "LaptopoffOnBlockRightClicked"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

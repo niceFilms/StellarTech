@@ -4,9 +4,11 @@
  */
 package nicefilms.stellartech.init;
 
+import nicefilms.stellartech.block.OutletBlock;
 import nicefilms.stellartech.block.LaptopoffBlock;
 import nicefilms.stellartech.block.LaptopBlock;
 import nicefilms.stellartech.block.HackertableBlock;
+import nicefilms.stellartech.block.GlithcedblockBlock;
 import nicefilms.stellartech.StellartechMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -20,4 +22,6 @@ public class StellartechModBlocks {
 	public static final RegistryObject<Block> HACKERTABLE = REGISTRY.register("hackertable", () -> new HackertableBlock());
 	public static final RegistryObject<Block> LAPTOP = REGISTRY.register("laptop", () -> new LaptopBlock());
 	public static final RegistryObject<Block> LAPTOPOFF = REGISTRY.register("laptopoff", () -> new LaptopoffBlock());
+	public static final RegistryObject<Block> OUTLET = REGISTRY.register("outlet", () -> new OutletBlock());
+	public static final RegistryObject<Block> GLITHCEDBLOCK = REGISTRY.register("glithcedblock", () -> new GlithcedblockBlock());
 }

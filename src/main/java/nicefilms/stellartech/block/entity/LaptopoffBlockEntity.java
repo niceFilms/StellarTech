@@ -129,7 +129,7 @@ public class LaptopoffBlockEntity extends RandomizableContainerBlockEntity imple
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(100, 100, 100, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(24000, 24000, 24000, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

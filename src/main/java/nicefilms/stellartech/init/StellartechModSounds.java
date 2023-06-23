@@ -25,4 +25,5 @@ public class StellartechModSounds {
 	public static final RegistryObject<SoundEvent> STARUP_LAPTOP = REGISTRY.register("starup_laptop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "starup_laptop")));
 	public static final RegistryObject<SoundEvent> SHUT_DOWN_COMPUTER = REGISTRY.register("shut_down_computer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "shut_down_computer")));
 	public static final RegistryObject<SoundEvent> LAPTOP_STARTUP = REGISTRY.register("laptop_startup", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "laptop_startup")));
+	public static final RegistryObject<SoundEvent> GLITCH_SOUND_EFFECT = REGISTRY.register("glitch_sound_effect", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("stellartech", "glitch_sound_effect")));
 }

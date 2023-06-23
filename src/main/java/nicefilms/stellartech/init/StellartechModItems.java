@@ -29,6 +29,8 @@ public class StellartechModItems {
 	public static final RegistryObject<Item> GLITCHED_USB = REGISTRY.register("glitched_usb", () -> new GlitchedUSBItem());
 	public static final RegistryObject<Item> LAPTOP = block(StellartechModBlocks.LAPTOP);
 	public static final RegistryObject<Item> LAPTOPOFF = block(StellartechModBlocks.LAPTOPOFF);
+	public static final RegistryObject<Item> OUTLET = block(StellartechModBlocks.OUTLET);
+	public static final RegistryObject<Item> GLITHCEDBLOCK = block(StellartechModBlocks.GLITHCEDBLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "stellartech:glithcedblock",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:dirt"
+  ]
+}

@@ -83,5 +83,13 @@
         "stream": false
       }
     ]
+  },
+  "glitch_sound_effect": {
+    "sounds": [
+      {
+        "name": "stellartech:glitch_sound_effects_tuberipper.cc",
+        "stream": false
+      }
+    ]
   }
 }

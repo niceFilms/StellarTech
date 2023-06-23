@@ -60,7 +60,7 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 0,
     "material": {
       "value": "IRON"
@@ -120,17 +120,14 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 100,
-    "energyMaxReceive": 100,
-    "energyMaxExtract": 100,
+    "energyCapacity": 24000,
+    "energyMaxReceive": 24000,
+    "energyMaxExtract": 24000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "LaptopOnBlockRightClicked"
-    },
-    "onRedstoneOn": {
-      "name": "LaptopoffRedstoneOn"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

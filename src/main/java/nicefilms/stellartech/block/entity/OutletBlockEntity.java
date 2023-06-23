@@ -29,12 +29,12 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class LaptopBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class OutletBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public LaptopBlockEntity(BlockPos position, BlockState state) {
-		super(StellartechModBlockEntities.LAPTOP.get(), position, state);
+	public OutletBlockEntity(BlockPos position, BlockState state) {
+		super(StellartechModBlockEntities.OUTLET.get(), position, state);
 	}
 
 	@Override
@@ -81,7 +81,7 @@ public class LaptopBlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("laptop");
+		return Component.literal("outlet");
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class LaptopBlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Laptop");
+		return Component.literal("Creative Outlet");
 	}
 
 	@Override
@@ -129,7 +129,7 @@ public class LaptopBlockEntity extends RandomizableContainerBlockEntity implemen
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(24000, 24000, 24000, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(1316134912, 2147483647, 2147483647, 1000000000) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

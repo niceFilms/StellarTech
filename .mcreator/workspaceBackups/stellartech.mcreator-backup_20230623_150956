@@ -166,10 +166,10 @@
       "registry_name": "hackertable",
       "metadata": {
         "files": [
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
           "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
           "src/main/resources/assets/stellartech/models/item/hackertable.json",
-          "src/main/resources/assets/stellartech/models/block/hackertable.json",
-          "src/main/resources/assets/stellartech/blockstates/hackertable.json"
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
         ]
       }
     },
@@ -215,37 +215,6 @@
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "LaptopoffRedstoneOn",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopoffRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -325,6 +294,23 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Outlet",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outlet",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json",
+          "src/main/resources/assets/stellartech/models/item/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
+          "src/main/resources/assets/stellartech/models/block/outlet.json"
         ]
       }
     }
@@ -435,6 +421,7 @@
       "item.stellartech.glithced_usb": "Glitched USB",
       "item.stellartech.usb": "USB ",
       "block.stellartech.laptop": "Laptop",
+      "block.stellartech.outlet": "Creative Outlet",
       "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",

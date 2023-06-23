@@ -210,42 +210,11 @@
       "registry_name": "laptop",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
           "src/main/resources/assets/stellartech/blockstates/laptop.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "LaptopoffRedstoneOn",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopoffRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -289,11 +258,11 @@
       "registry_name": "laptopoff",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java",
-          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
           "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/models/block/laptopoff.json"
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
         ]
       }
     },

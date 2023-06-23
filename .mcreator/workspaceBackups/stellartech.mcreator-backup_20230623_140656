@@ -166,10 +166,10 @@
       "registry_name": "hackertable",
       "metadata": {
         "files": [
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
           "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
           "src/main/resources/assets/stellartech/models/item/hackertable.json",
-          "src/main/resources/assets/stellartech/models/block/hackertable.json",
-          "src/main/resources/assets/stellartech/blockstates/hackertable.json"
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
         ]
       }
     },
@@ -215,37 +215,6 @@
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
-        ]
-      }
-    },
-    {
-      "name": "LaptopoffRedstoneOn",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laptopoff_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/nicefilms/stellartech/procedures/LaptopoffRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -307,6 +276,37 @@
       "metadata": {
         "files": [
           "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaptopRedstoneOn",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptop_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopRedstoneOnProcedure.java"
         ],
         "dependencies": [
           {

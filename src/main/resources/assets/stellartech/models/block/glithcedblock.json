@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stellartech:block/glitched_block",
+    "up": "stellartech:block/glitched_block",
+    "north": "stellartech:block/glitched_block",
+    "east": "stellartech:block/glitched_block",
+    "south": "stellartech:block/glitched_block",
+    "west": "stellartech:block/glitched_block",
+    "particle": "stellartech:block/glitched_block"
+  },
+  "render_type": "solid"
+}

@@ -1,7 +1,6 @@
 
 package nicefilms.stellartech.block;
 
-import nicefilms.stellartech.procedures.LaptopoffRedstoneOnProcedure;
 import nicefilms.stellartech.procedures.LaptopOnBlockRightClickedProcedure;
 import nicefilms.stellartech.block.entity.LaptopBlockEntity;
 
@@ -97,19 +96,16 @@ public class LaptopBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public boolean canConnectRedstone(BlockState state, BlockGetter world, BlockPos pos, Direction side) {
+		return true;
+	}
+
+	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		if (world.getBestNeighborSignal(pos) > 0) {
-			LaptopoffRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		}
 	}
 
 	@Override
