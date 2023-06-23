@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "stellartech:block/glitched_block",
-    "up": "stellartech:block/glitched_block",
-    "north": "stellartech:block/glitched_block",
-    "east": "stellartech:block/glitched_block",
-    "south": "stellartech:block/glitched_block",
-    "west": "stellartech:block/glitched_block",
-    "particle": "stellartech:block/glitched_block"
+    "down": "stellartech:block/null_block",
+    "up": "stellartech:block/null_block",
+    "north": "stellartech:block/null_block",
+    "east": "stellartech:block/null_block",
+    "south": "stellartech:block/null_block",
+    "west": "stellartech:block/null_block",
+    "particle": "stellartech:block/null_block"
   },
   "render_type": "solid"
 }

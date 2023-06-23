@@ -342,10 +342,10 @@
       "registry_name": "glithcedblock",
       "metadata": {
         "files": [
+          "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java",
           "src/main/resources/assets/stellartech/models/block/glithcedblock.json",
           "src/main/resources/assets/stellartech/blockstates/glithcedblock.json",
-          "src/main/resources/assets/stellartech/models/item/glithcedblock.json",
-          "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java"
+          "src/main/resources/assets/stellartech/models/item/glithcedblock.json"
         ]
       }
     },
