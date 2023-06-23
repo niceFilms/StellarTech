@@ -398,6 +398,21 @@
           }
         ]
       }
+    },
+    {
+      "name": "GlitchedBiomeStandard",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_biome_standard",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json",
+          "src/main/resources/data/stellartech/worldgen/biome/glitched_biome_standard.json",
+          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -494,9 +509,9 @@
   ],
   "language_map": {
     "en_us": {
-      "biome.test.city_of_the_future": "City Of The Future",
-      "entity.minecraft.villager.stellartech.hacker": "Hacker",
       "subtitles.laptop_startup": "",
+      "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "biome.test.city_of_the_future": "City Of The Future",
       "item.stellartech.creativeblackhole": "Creativeblackhole",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
@@ -520,6 +535,7 @@
       "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "item.test.creativeblackhole": "Creativeblackhole",
+      "biome.stellartech.glitched_biome_standard": "Glitched Biome Standard",
       "item.test.glithcedingot": "Glitched Ingot",
       "subtitles.starup_laptop": "",
       "effect.test.glitching": "98@...19475-102",
