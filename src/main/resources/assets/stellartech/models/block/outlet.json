@@ -1,13 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "stellartech:custom/outlet",
   "textures": {
-    "down": "stellartech:block/outlet_block",
-    "up": "stellartech:block/outlet_block",
-    "north": "stellartech:block/power_outlet_side",
-    "east": "stellartech:block/outlet_block",
-    "south": "stellartech:block/outlet_block",
-    "west": "stellartech:block/outlet_block",
-    "particle": "stellartech:block/outlet_block"
+    "all": "stellartech:block/texture__3",
+    "particle": "stellartech:block/texture__3",
+    "0": "stellartech:block/white_concrete",
+    "1": "stellartech:block/texture__3"
   },
   "render_type": "solid"
 }

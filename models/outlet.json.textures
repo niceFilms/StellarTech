@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "white_concrete",
+        "1": "texture__3"
+      },
+      "name": "default"
+    }
+  }
+}

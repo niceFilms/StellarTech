@@ -3,6 +3,9 @@ package nicefilms.stellartech.block;
 
 import nicefilms.stellartech.block.entity.OutletBlockEntity;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -33,13 +36,33 @@ public class OutletBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public OutletBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 2, 15, 11, 14, 17));
+			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 2, -1, 11, 14, 1));
+			case EAST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(15, 2, 5, 17, 14, 11));
+			case WEST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(-1, 2, 5, 1, 14, 11));
+		};
 	}
 
 	@Override

@@ -306,11 +306,11 @@
       "registry_name": "outlet",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/outlet.json",
           "src/main/resources/assets/stellartech/models/item/outlet.json",
           "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
-          "src/main/resources/assets/stellartech/models/block/outlet.json"
+          "src/main/resources/assets/stellartech/models/block/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json"
         ]
       }
     },
@@ -1703,8 +1703,8 @@
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
       "biome.test.city_of_the_future": "City Of The Future",
       "block.stellartech.cable_xc": "Cable",
-      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "block.stellartech.cable_x": "Cable",
+      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "block.stellartech.cable_tc": "Cable",
       "subtitles.typer_short": "",
       "item_group.stellartech.stellar_tech": "Stellar Tech",
