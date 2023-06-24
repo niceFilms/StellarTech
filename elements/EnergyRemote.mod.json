@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "usb_glitched_texture",
+    "texture": "black_hole",
     "customModelName": "Normal",
-    "name": "Glitched USB",
+    "name": "Energy Remote",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:StellarTech"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -25,14 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "988690-n_2@m"
+      "Checks The FE and max FE of a block"
     ],
-    "hasGlow": false,
+    "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
-      "name": "GlitchedUSBRightclicked"
+      "name": "EnergyRemoteRightclickedOnBlock"
     },
     "isFood": false,
     "nutritionalValue": 4,

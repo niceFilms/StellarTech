@@ -7,6 +7,7 @@ package nicefilms.stellartech.init;
 import nicefilms.stellartech.item.USBItem;
 import nicefilms.stellartech.item.GlithcedingotItem;
 import nicefilms.stellartech.item.GlitchedUSBItem;
+import nicefilms.stellartech.item.EnergyRemoteItem;
 import nicefilms.stellartech.item.CreativeblackholeItem;
 import nicefilms.stellartech.item.CannedcornItem;
 import nicefilms.stellartech.StellartechMod;
@@ -48,6 +49,7 @@ public class StellartechModItems {
 	public static final RegistryObject<Item> CABLE_XC = block(StellartechModBlocks.CABLE_XC);
 	public static final RegistryObject<Item> CABLE_F = block(StellartechModBlocks.CABLE_F);
 	public static final RegistryObject<Item> CABLE_S = block(StellartechModBlocks.CABLE_S);
+	public static final RegistryObject<Item> ENERGY_REMOTE = REGISTRY.register("energy_remote", () -> new EnergyRemoteItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

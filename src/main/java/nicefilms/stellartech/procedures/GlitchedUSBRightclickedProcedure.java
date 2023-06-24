@@ -24,7 +24,7 @@ public class GlitchedUSBRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellartechModBlocks.LAPTOPOFF.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellartechModBlocks.LAPTOP.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellartechModBlocks.LAPTOPOFF.get()) {
 			if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
 				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("stellartech:glitched_universe"));
 				if (_player.level.dimension() == destinationType)

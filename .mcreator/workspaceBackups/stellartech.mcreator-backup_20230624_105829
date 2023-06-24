@@ -425,7 +425,24 @@
         "files": [
           "src/main/java/nicefilms/stellartech/procedures/CableUpdateTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/CableMod/Procedures"
     },
@@ -746,7 +763,24 @@
         "files": [
           "src/main/java/nicefilms/stellartech/procedures/CableModelUpdaterMainProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/CableMod/Procedures/Model Updater"
     },
@@ -1101,6 +1135,475 @@
         ]
       },
       "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterTXC",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_txc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterTXCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterTXCC",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_txcc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterTXCCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterX",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_x",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterXC",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_xc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterXCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterF",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_f",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterFProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableModelUpdaterS",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_model_updater_s",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableModelUpdaterSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/Model Updater/Sub"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyEast",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_east",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyEastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyNorth",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_north",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyNorthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergySouth",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_south",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergySouthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyUp",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_up",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyWest",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_west",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyWestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyDown",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_down",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Logic"
+    },
+    {
+      "name": "ElectricalCableForgeEnergySides",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_sides",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergySidesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE/Numbers"
+    },
+    {
+      "name": "ElectricalCableForgeEnergyMain",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrical_cable_forge_energy_main",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/ElectricalCableForgeEnergyMainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CableMod/Procedures/FE"
+    },
+    {
+      "name": "CableTag",
+      "type": "tag",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/cable.json"
+        ]
+      },
+      "path": "~/CableMod"
     }
   ],
   "variable_elements": [],
@@ -1200,8 +1703,8 @@
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
       "biome.test.city_of_the_future": "City Of The Future",
       "block.stellartech.cable_xc": "Cable",
-      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "block.stellartech.cable_x": "Cable",
+      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "block.stellartech.cable_tc": "Cable",
       "subtitles.typer_short": "",
       "item_group.stellartech.stellar_tech": "Stellar Tech",
@@ -1269,6 +1772,19 @@
                 "children": [
                   {
                     "name": "Sub",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "FE",
+                "children": [
+                  {
+                    "name": "Logic",
+                    "children": []
+                  },
+                  {
+                    "name": "Numbers",
                     "children": []
                   }
                 ]

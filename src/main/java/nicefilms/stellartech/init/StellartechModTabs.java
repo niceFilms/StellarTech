@@ -35,6 +35,7 @@ public class StellartechModTabs {
 					tabData.accept(StellartechModBlocks.OUTLET.get().asItem());
 					tabData.accept(StellartechModBlocks.GLITHCEDBLOCK.get().asItem());
 					tabData.accept(StellartechModBlocks.CABLE.get().asItem());
+					tabData.accept(StellartechModItems.ENERGY_REMOTE.get());
 				}).withSearchBar());
 	}
 }
