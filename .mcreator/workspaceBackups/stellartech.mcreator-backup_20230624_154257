@@ -182,8 +182,8 @@
       "registry_name": "usb",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/item/USBItem.java",
-          "src/main/resources/assets/stellartech/models/item/usb.json"
+          "src/main/resources/assets/stellartech/models/item/usb.json",
+          "src/main/java/nicefilms/stellartech/item/USBItem.java"
         ]
       }
     },
@@ -196,8 +196,8 @@
       "registry_name": "glitched_usb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stellartech/models/item/glitched_usb.json",
-          "src/main/java/nicefilms/stellartech/item/GlitchedUSBItem.java"
+          "src/main/java/nicefilms/stellartech/item/GlitchedUSBItem.java",
+          "src/main/resources/assets/stellartech/models/item/glitched_usb.json"
         ]
       }
     },
@@ -210,8 +210,8 @@
       "registry_name": "laptop",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
@@ -258,11 +258,11 @@
       "registry_name": "laptopoff",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java",
           "src/main/resources/assets/stellartech/models/item/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/laptopoff.json"
         ]
       }
     },
@@ -306,11 +306,11 @@
       "registry_name": "outlet",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/outlet.json",
           "src/main/resources/assets/stellartech/models/item/outlet.json",
-          "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
-          "src/main/resources/assets/stellartech/models/block/outlet.json"
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/outlet.json",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/OutletBlock.java"
         ]
       }
     },
@@ -342,10 +342,10 @@
       "registry_name": "glithcedblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/stellartech/models/item/glithcedblock.json",
           "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java",
           "src/main/resources/assets/stellartech/models/block/glithcedblock.json",
-          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json",
-          "src/main/resources/assets/stellartech/models/item/glithcedblock.json"
+          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json"
         ]
       }
     },
@@ -358,9 +358,9 @@
       "registry_name": "glitched_universe",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java",
           "src/main/resources/data/stellartech/dimension_type/glitched_universe.json",
-          "src/main/resources/data/stellartech/dimension/glitched_universe.json"
+          "src/main/resources/data/stellartech/dimension/glitched_universe.json",
+          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java"
         ]
       }
     },
@@ -408,9 +408,9 @@
       "registry_name": "glitched_biome_standard",
       "metadata": {
         "files": [
-          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json",
+          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json",
           "src/main/resources/data/stellartech/worldgen/biome/glitched_biome_standard.json",
-          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json"
+          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json"
         ]
       }
     },
@@ -1604,6 +1604,229 @@
         ]
       },
       "path": "~/CableMod"
+    },
+    {
+      "name": "OutletUpdateTick",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outlet_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/OutletUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyRemoteRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_remote_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/EnergyRemoteRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyRemote",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_remote",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/item/EnergyRemoteItem.java",
+          "src/main/resources/assets/stellartech/models/item/energy_remote.json"
+        ]
+      }
+    },
+    {
+      "name": "DaylightChargerUpdateTick",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daylight_charger_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/DaylightChargerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaylightCharger",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daylight_charger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/daylight_charger.json",
+          "src/main/java/nicefilms/stellartech/block/DaylightChargerBlock.java",
+          "src/main/resources/assets/stellartech/models/item/daylight_charger.json",
+          "src/main/resources/assets/stellartech/models/block/daylight_charger.json"
+        ]
+      }
+    },
+    {
+      "name": "BattUpdateTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batt_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/BattUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Batt",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/batt.json",
+          "src/main/java/nicefilms/stellartech/block/BattBlock.java",
+          "src/main/resources/assets/stellartech/blockstates/batt.json",
+          "src/main/resources/assets/stellartech/models/block/batt.json",
+          "src/main/java/nicefilms/stellartech/block/entity/BattBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FanUpdateTick",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fan_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/FanUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fan",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fan",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/FanBlock.java",
+          "src/main/resources/assets/stellartech/blockstates/fan.json",
+          "src/main/java/nicefilms/stellartech/block/entity/FanBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/fan.json",
+          "src/main/resources/assets/stellartech/models/item/fan.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1703,8 +1926,9 @@
       "entity.minecraft.villager.stellartech.hacker": "Hacker",
       "biome.test.city_of_the_future": "City Of The Future",
       "block.stellartech.cable_xc": "Cable",
-      "item.stellartech.creativeblackhole": "Creativeblackhole",
       "block.stellartech.cable_x": "Cable",
+      "item.stellartech.creativeblackhole": "Creativeblackhole",
+      "block.stellartech.batt": "Batt",
       "block.stellartech.cable_tc": "Cable",
       "subtitles.typer_short": "",
       "item_group.stellartech.stellar_tech": "Stellar Tech",
@@ -1718,6 +1942,7 @@
       "block.stellartech.cable_i": "Cable",
       "block.stellartech.cable_txc": "Cable",
       "block.stellartech.cable_l": "Cable",
+      "block.stellartech.daylight_charger": "Daylight Charger",
       "entity.minecraft.villager.test.hacker": "Hacker",
       "item.stellartech.glithced_usb": "Glitched USB",
       "block.stellartech.cable_s": "Cable",
@@ -1726,6 +1951,7 @@
       "subtitles.glitch_sound_effect": "",
       "block.stellartech.laptop": "Laptop",
       "block.stellartech.outlet": "Creative Outlet",
+      "item.stellartech.energy_remote": "Energy Remote",
       "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "biome.stellartech.glitched_biome_standard": "Glitched Biome Standard",
@@ -1736,6 +1962,7 @@
       "block.stellartech.cable_lt": "Cable",
       "item.stellartech.cannedcorn": "Canned Corn",
       "subtitles.laptop_startup": "",
+      "block.stellartech.fan": "Fan",
       "item_group.test.stellar_tech": "Stellar Tech",
       "subtitles.background_music_biome": "",
       "subtitles.breaking_laptop": "",

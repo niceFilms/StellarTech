@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "black_hole",
+    "texture": "batt",
     "customModelName": "Normal",
     "name": "Energy Remote",
     "rarity": "EPIC",

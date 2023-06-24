@@ -182,8 +182,8 @@
       "registry_name": "usb",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/item/USBItem.java",
-          "src/main/resources/assets/stellartech/models/item/usb.json"
+          "src/main/resources/assets/stellartech/models/item/usb.json",
+          "src/main/java/nicefilms/stellartech/item/USBItem.java"
         ]
       }
     },
@@ -210,8 +210,8 @@
       "registry_name": "laptop",
       "metadata": {
         "files": [
-          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/laptop.json",
           "src/main/resources/assets/stellartech/models/item/laptop.json",
           "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
           "src/main/resources/assets/stellartech/models/block/laptop.json"
@@ -258,11 +258,11 @@
       "registry_name": "laptopoff",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java",
           "src/main/resources/assets/stellartech/models/item/laptopoff.json",
-          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
-          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/laptopoff.json"
         ]
       }
     },
@@ -306,11 +306,11 @@
       "registry_name": "outlet",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
-          "src/main/resources/assets/stellartech/blockstates/outlet.json",
           "src/main/resources/assets/stellartech/models/item/outlet.json",
-          "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
-          "src/main/resources/assets/stellartech/models/block/outlet.json"
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/outlet.json",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/OutletBlock.java"
         ]
       }
     },
@@ -342,10 +342,10 @@
       "registry_name": "glithcedblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/stellartech/models/item/glithcedblock.json",
           "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java",
           "src/main/resources/assets/stellartech/models/block/glithcedblock.json",
-          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json",
-          "src/main/resources/assets/stellartech/models/item/glithcedblock.json"
+          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json"
         ]
       }
     },
@@ -358,9 +358,9 @@
       "registry_name": "glitched_universe",
       "metadata": {
         "files": [
-          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java",
           "src/main/resources/data/stellartech/dimension_type/glitched_universe.json",
-          "src/main/resources/data/stellartech/dimension/glitched_universe.json"
+          "src/main/resources/data/stellartech/dimension/glitched_universe.json",
+          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java"
         ]
       }
     },
@@ -408,9 +408,9 @@
       "registry_name": "glitched_biome_standard",
       "metadata": {
         "files": [
-          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json",
+          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json",
           "src/main/resources/data/stellartech/worldgen/biome/glitched_biome_standard.json",
-          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json"
+          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json"
         ]
       }
     },
@@ -1604,6 +1604,136 @@
         ]
       },
       "path": "~/CableMod"
+    },
+    {
+      "name": "OutletUpdateTick",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outlet_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/OutletUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyRemoteRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_remote_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/EnergyRemoteRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyRemote",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_remote",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/item/EnergyRemoteItem.java",
+          "src/main/resources/assets/stellartech/models/item/energy_remote.json"
+        ]
+      }
+    },
+    {
+      "name": "PortaBatRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "porta_bat_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortaBat",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porta_bat",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/item/PortaBatItem.java",
+          "src/main/resources/assets/stellartech/models/item/porta_bat.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1726,9 +1856,11 @@
       "subtitles.glitch_sound_effect": "",
       "block.stellartech.laptop": "Laptop",
       "block.stellartech.outlet": "Creative Outlet",
+      "item.stellartech.energy_remote": "Energy Remote",
       "subtitles.shut_down_computer": "",
       "effect.stellartech.glitching": "98@...19475-102",
       "biome.stellartech.glitched_biome_standard": "Glitched Biome Standard",
+      "item.stellartech.porta_bat": "Porta Bat",
       "subtitles.starup_laptop": "",
       "block.stellartech.cable_tx": "Cable",
       "subtitles.error": "",
