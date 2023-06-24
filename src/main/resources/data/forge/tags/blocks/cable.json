@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "stellartech:cable_t",
+    "stellartech:cable_txc",
+    "stellartech:cable_x",
+    "stellartech:cable_tx",
+    "stellartech:cable_xc",
+    "stellartech:cable_lt",
+    "stellartech:cable_ltc",
+    "stellartech:cable_e",
+    "stellartech:cable_lcc",
+    "stellartech:cable",
+    "stellartech:cable_tc",
+    "stellartech:cable_f",
+    "stellartech:cable_i",
+    "stellartech:cable_txcc",
+    "stellartech:cable_l",
+    "stellartech:cable_lc",
+    "stellartech:cable_s"
+  ]
+}

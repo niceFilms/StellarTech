@@ -1,0 +1,928 @@
+{
+  "mod_elements": [
+    {
+      "name": "StellarTech",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stellar_tech",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Creativeblackhole",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativeblackhole",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/item/CreativeblackholeItem.java",
+          "src/main/resources/assets/stellartech/models/item/creativeblackhole.json"
+        ]
+      }
+    },
+    {
+      "name": "CityOfTheFuture",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_of_the_future",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellartech/worldgen/biome/city_of_the_future.json"
+        ]
+      }
+    },
+    {
+      "name": "CannedcornPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannedcorn_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/CannedcornPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cannedcorn",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannedcorn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/cannedcorn.json",
+          "src/main/java/nicefilms/stellartech/item/CannedcornItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GlithcedingotItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedingot_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlithcedingotItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glithcedingot",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/glithcedingot.json",
+          "src/main/java/nicefilms/stellartech/item/GlithcedingotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GlitchingOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitching_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlitchingOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glitching",
+      "type": "potioneffect",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitching",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/potion/GlitchingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Hacker",
+      "type": "villagerprofession",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/textures/entity/villager/profession/hacker.png.mcmeta"
+        ]
+      }
+    },
+    {
+      "name": "Hackertable",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hackertable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/hackertable.json",
+          "src/main/java/nicefilms/stellartech/block/HackertableBlock.java",
+          "src/main/resources/assets/stellartech/models/item/hackertable.json",
+          "src/main/resources/assets/stellartech/models/block/hackertable.json"
+        ]
+      }
+    },
+    {
+      "name": "USB",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usb",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/item/USBItem.java",
+          "src/main/resources/assets/stellartech/models/item/usb.json"
+        ]
+      }
+    },
+    {
+      "name": "GlitchedUSB",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_usb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/glitched_usb.json",
+          "src/main/java/nicefilms/stellartech/item/GlitchedUSBItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Laptop",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/laptop.json",
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/item/laptop.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopBlock.java",
+          "src/main/resources/assets/stellartech/models/block/laptop.json"
+        ]
+      }
+    },
+    {
+      "name": "LaptopoffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopoffOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Laptopoff",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptopoff",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/LaptopoffBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/item/laptopoff.json",
+          "src/main/resources/assets/stellartech/models/block/laptopoff.json",
+          "src/main/java/nicefilms/stellartech/block/LaptopoffBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LaptopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laptop_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/LaptopOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Outlet",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outlet",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/OutletBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/outlet.json",
+          "src/main/resources/assets/stellartech/models/item/outlet.json",
+          "src/main/java/nicefilms/stellartech/block/OutletBlock.java",
+          "src/main/resources/assets/stellartech/models/block/outlet.json"
+        ]
+      }
+    },
+    {
+      "name": "GlithcedblockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedblock_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlithcedblockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glithcedblock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glithcedblock",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/GlithcedblockBlock.java",
+          "src/main/resources/assets/stellartech/models/block/glithcedblock.json",
+          "src/main/resources/assets/stellartech/blockstates/glithcedblock.json",
+          "src/main/resources/assets/stellartech/models/item/glithcedblock.json"
+        ]
+      }
+    },
+    {
+      "name": "GlitchedUniverse",
+      "type": "dimension",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_universe",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/world/dimension/GlitchedUniverseDimension.java",
+          "src/main/resources/data/stellartech/dimension_type/glitched_universe.json",
+          "src/main/resources/data/stellartech/dimension/glitched_universe.json"
+        ]
+      }
+    },
+    {
+      "name": "GlitchedUSBRightclicked",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_usb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/GlitchedUSBRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlitchedBiomeStandard",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitched_biome_standard",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellartech/worldgen/placed_feature/glitched_biome_standard_tree.json",
+          "src/main/resources/data/stellartech/worldgen/biome/glitched_biome_standard.json",
+          "src/main/resources/data/stellartech/worldgen/configured_feature/glitched_biome_standard_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "CableUpdateTick",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/procedures/CableUpdateTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/CableMod/Procedures"
+    },
+    {
+      "name": "Cable",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/cable.json",
+          "src/main/resources/assets/stellartech/models/block/cable.json",
+          "src/main/java/nicefilms/stellartech/block/CableBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableE",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_e",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/CableEBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/item/cable_e.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_e.json",
+          "src/main/java/nicefilms/stellartech/block/CableEBlock.java",
+          "src/main/resources/assets/stellartech/models/block/cable_e.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableI",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_i",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/CableIBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_i.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_i.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableIBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/cable_i.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableL",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_l",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/block/cable_l.json",
+          "src/main/java/nicefilms/stellartech/block/CableLBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_l.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_l.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableLBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableLC",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/block/cable_lc.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_lc.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableLCBlockEntity.java",
+          "src/main/java/nicefilms/stellartech/block/CableLCBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_lc.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableLCC",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lcc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/CableLCCBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/cable_lcc.json",
+          "src/main/java/nicefilms/stellartech/block/CableLCCBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_lcc.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_lcc.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableLT",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/cable_lt.json",
+          "src/main/resources/assets/stellartech/models/block/cable_lt.json",
+          "src/main/resources/assets/stellartech/models/item/cable_lt.json",
+          "src/main/java/nicefilms/stellartech/block/CableLTBlock.java",
+          "src/main/java/nicefilms/stellartech/block/entity/CableLTBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableLTC",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_ltc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/blockstates/cable_ltc.json",
+          "src/main/java/nicefilms/stellartech/block/CableLTCBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_ltc.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableLTCBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/cable_ltc.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableT",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_t",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/CableTBlock.java",
+          "src/main/java/nicefilms/stellartech/block/entity/CableTBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/block/cable_t.json",
+          "src/main/resources/assets/stellartech/models/item/cable_t.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_t.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableTC",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/cable_tc.json",
+          "src/main/java/nicefilms/stellartech/block/CableTCBlock.java",
+          "src/main/resources/assets/stellartech/blockstates/cable_tc.json",
+          "src/main/resources/assets/stellartech/models/block/cable_tc.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableTCBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableTX",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tx",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/CableTXBlockEntity.java",
+          "src/main/java/nicefilms/stellartech/block/CableTXBlock.java",
+          "src/main/resources/assets/stellartech/models/item/cable_tx.json",
+          "src/main/resources/assets/stellartech/models/block/cable_tx.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_tx.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableTXC",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/CableTXCBlock.java",
+          "src/main/java/nicefilms/stellartech/block/entity/CableTXCBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/cable_txc.json",
+          "src/main/resources/assets/stellartech/models/item/cable_txc.json",
+          "src/main/resources/assets/stellartech/models/block/cable_txc.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableTXCC",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txcc",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/CableTXCCBlock.java",
+          "src/main/resources/assets/stellartech/models/block/cable_txcc.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_txcc.json",
+          "src/main/resources/assets/stellartech/models/item/cable_txcc.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableTXCCBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableX",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_x",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/cable_x.json",
+          "src/main/java/nicefilms/stellartech/block/CableXBlock.java",
+          "src/main/resources/assets/stellartech/blockstates/cable_x.json",
+          "src/main/resources/assets/stellartech/models/block/cable_x.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableXBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableXC",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_xc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/block/cable_xc.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_xc.json",
+          "src/main/java/nicefilms/stellartech/block/CableXCBlock.java",
+          "src/main/java/nicefilms/stellartech/block/entity/CableXCBlockEntity.java",
+          "src/main/resources/assets/stellartech/models/item/cable_xc.json"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableF",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellartech/models/item/cable_f.json",
+          "src/main/java/nicefilms/stellartech/block/CableFBlock.java",
+          "src/main/resources/assets/stellartech/models/block/cable_f.json",
+          "src/main/resources/assets/stellartech/blockstates/cable_f.json",
+          "src/main/java/nicefilms/stellartech/block/entity/CableFBlockEntity.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    },
+    {
+      "name": "CableS",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_s",
+      "metadata": {
+        "files": [
+          "src/main/java/nicefilms/stellartech/block/entity/CableSBlockEntity.java",
+          "src/main/resources/assets/stellartech/blockstates/cable_s.json",
+          "src/main/resources/assets/stellartech/models/item/cable_s.json",
+          "src/main/resources/assets/stellartech/models/block/cable_s.json",
+          "src/main/java/nicefilms/stellartech/block/CableSBlock.java"
+        ]
+      },
+      "path": "~/CableMod/Blocks"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "biome_music",
+      "files": [
+        "epic_sci-fi_music_aphelion_alibi_music_tuberipper.cc"
+      ],
+      "category": "music",
+      "subtitle": "scifi"
+    },
+    {
+      "name": "background_music_biome",
+      "files": [
+        "the_world_in_2050_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "typing",
+      "files": [
+        "writing_on_keyboard_sound_effect_typing_tuberipper.cc"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "typer_short",
+      "files": [
+        "writing_on_keyboard_sound_effect_typing_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "error",
+      "files": [
+        "error_sound_effects_no_copyright_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "breaking_laptop",
+      "files": [
+        "ultimate_glass_sfx_library_computer_smashing_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "falling_laptop",
+      "files": [
+        "falling_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "starup_laptop",
+      "files": [
+        "windows_startup_meme_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "shut_down_computer",
+      "files": [
+        "windows_shut-down_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "laptop_startup",
+      "files": [
+        "microsoft_windows_xp_startup_sound_tuberipper.cc",
+        "windows_shut-down_sound_effect_tuberipper.cc"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "glitch_sound_effect",
+      "files": [
+        "glitch_sound_effects_tuberipper.cc"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.minecraft.villager.stellartech.hacker": "Hacker",
+      "biome.test.city_of_the_future": "City Of The Future",
+      "block.stellartech.cable_xc": "Cable",
+      "item.stellartech.creativeblackhole": "Creativeblackhole",
+      "block.stellartech.cable_x": "Cable",
+      "block.stellartech.cable_tc": "Cable",
+      "subtitles.typer_short": "",
+      "item_group.stellartech.stellar_tech": "Stellar Tech",
+      "subtitles.typing": "",
+      "block.stellartech.cable_lcc": "Cable",
+      "item.stellartech.us_bstick": "USB Stick",
+      "block.stellartech.glithcedblock": "Gitched block",
+      "block.stellartech.cable_lc": "Cable",
+      "block.stellartech.cable_f": "Cable",
+      "block.stellartech.hackertable": "Hackertable",
+      "block.stellartech.cable_i": "Cable",
+      "block.stellartech.cable_txc": "Cable",
+      "block.stellartech.cable_l": "Cable",
+      "entity.minecraft.villager.test.hacker": "Hacker",
+      "item.stellartech.glithced_usb": "Glitched USB",
+      "block.stellartech.cable_s": "Cable",
+      "block.stellartech.cable_ltc": "Cable",
+      "block.stellartech.cable_t": "Cable",
+      "subtitles.glitch_sound_effect": "",
+      "block.stellartech.laptop": "Laptop",
+      "block.stellartech.outlet": "Creative Outlet",
+      "subtitles.shut_down_computer": "",
+      "effect.stellartech.glitching": "98@...19475-102",
+      "biome.stellartech.glitched_biome_standard": "Glitched Biome Standard",
+      "subtitles.starup_laptop": "",
+      "block.stellartech.cable_tx": "Cable",
+      "subtitles.error": "",
+      "item.stellartech.glithcedingot": "Glitched Ingot",
+      "block.stellartech.cable_lt": "Cable",
+      "item.stellartech.cannedcorn": "Canned Corn",
+      "subtitles.laptop_startup": "",
+      "item_group.test.stellar_tech": "Stellar Tech",
+      "subtitles.background_music_biome": "",
+      "subtitles.breaking_laptop": "",
+      "subtitles.falling_laptop": "",
+      "subtitles.biome_music": "scifi",
+      "block.stellartech.laptopoff": "Laptop Off",
+      "item.stellartech.glitched_usb": "Glitched USB",
+      "item.stellartech.usb": "USB ",
+      "block.stellartech.cable": "Cable",
+      "block.stellartech.cable_e": "Cable",
+      "block.stellartech.cable_txcc": "Cable",
+      "item.test.creativeblackhole": "Creativeblackhole",
+      "item.test.glithcedingot": "Glitched Ingot",
+      "effect.test.glitching": "98@...19475-102",
+      "biome.stellartech.city_of_the_future": "City Of The Future",
+      "item.test.cannedcorn": "Canned Corn"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "CableMod",
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": [
+              {
+                "name": "Model Updater",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "stellartech",
+    "modName": "StellarTech",
+    "version": "1.0.0",
+    "author": "niceFilms",
+    "websiteURL": "https://github.com/niceFilms/StellarTech",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "modElementsPackage": "nicefilms.stellartech",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

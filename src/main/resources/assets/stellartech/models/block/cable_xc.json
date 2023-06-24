@@ -1,0 +1,9 @@
+{
+  "parent": "stellartech:custom/electrical_cable_xc",
+  "textures": {
+    "all": "stellartech:block/electrical_cable",
+    "particle": "stellartech:block/electrical_cable",
+    "cable": "stellartech:block/electrical_cable"
+  },
+  "render_type": "cutout"
+}

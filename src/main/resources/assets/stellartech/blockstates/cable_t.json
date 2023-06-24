@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "stellartech:block/cable_t"
+    },
+    "facing=east": {
+      "model": "stellartech:block/cable_t",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "stellartech:block/cable_t",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "stellartech:block/cable_t",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "stellartech:block/cable_t",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "stellartech:block/cable_t",
+      "x": 90
+    }
+  }
+}
